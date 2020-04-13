@@ -26,6 +26,7 @@ class Student
     DB[:conn].execute(sql) 
   end
 
+
   def self.drop_table
     sql = "DROP TABLE IF EXISTS students"
     DB[:conn].execute(sql) 
@@ -50,5 +51,6 @@ class Student
     sql = "SELECT * FROM students" 
     DB[:conn].execute(sql)
   end
+
 
 end
